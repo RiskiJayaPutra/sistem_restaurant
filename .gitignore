@@ -1,0 +1,23 @@
+# Environment
+.env
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+/storage/logs/
+
+# Cache
+/storage/cache/
+.phpunit.cache/

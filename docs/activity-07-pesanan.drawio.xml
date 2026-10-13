@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Activity Diagram - Kelola Pesanan" id="activity-pesanan-bw">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="920" pageHeight="820" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Header Admin -->
+        <mxCell id="sw_admin_hdr" value="Admin / Petugas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontStyle=1;fontColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="400" height="35" as="geometry" />
+        </mxCell>
+        <!-- Body Admin -->
+        <mxCell id="sw_admin_body" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="65" width="400" height="710" as="geometry" />
+        </mxCell>
+
+        <!-- Header Sistem -->
+        <mxCell id="sw_sys_hdr" value="Sistem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontStyle=1;fontColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="440" y="30" width="440" height="35" as="geometry" />
+        </mxCell>
+        <!-- Body Sistem -->
+        <mxCell id="sw_sys_body" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="440" y="65" width="440" height="710" as="geometry" />
+        </mxCell>
+
+        <!-- Start Node (Admin) -->
+        <mxCell id="start" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="225" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Buka Detail Reservasi -->
+        <mxCell id="act_buka_detail" value="Membuka Detail Reservasi Tamu" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="130" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Klik Buat Pesanan -->
+        <mxCell id="act_klik_tambah" value="Klik Tombol Buat Pesanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="205" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Tampilkan Form Pesanan -->
+        <mxCell id="act_tampil_form" value="Menampilkan Formulir Pesanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="205" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Pilih Menu -->
+        <mxCell id="act_pilih_menu" value="Memilih Menu Makanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="280" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Isi Porsi -->
+        <mxCell id="act_isi_porsi" value="Mengisi Jumlah Porsi Pesanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="355" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Klik Simpan Pesanan -->
+        <mxCell id="act_klik_simpan" value="Klik Tombol Simpan Pesanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="430" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Hitung Total Harga -->
+        <mxCell id="act_hitung" value="Menghitung Total Harga Pesanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="430" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Decision: Ada Menu Dipilih? -->
+        <mxCell id="dec_valid" value="Ada Menu&#xa;Dipilih?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="505" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Pesan Peringatan Kosong (Di sebelah kanan decision, tanpa overlap) -->
+        <mxCell id="act_error" value="Menampilkan Peringatan Pesanan Kosong" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="705" y="512" width="165" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Simpan Rincian Pesanan (Di bawah decision, jarak lega) -->
+        <mxCell id="act_simpan_db" value="Menyimpan Rincian Pesanan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="595" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Menampilkan Total Tagihan -->
+        <mxCell id="act_notif_sukses" value="Menampilkan Total Tagihan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="670" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Melihat Rincian Pesanan -->
+        <mxCell id="act_lihat" value="Melihat Rincian Pesanan Sukses" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="670" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- End Node (Admin) -->
+        <mxCell id="end" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="60" y="678" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Transisi / Panah -->
+        <mxCell id="e1" edge="1" parent="1" source="start" target="act_buka_detail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act_buka_detail" target="act_klik_tambah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act_klik_tambah" target="act_tampil_form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act_tampil_form" target="act_pilih_menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act_pilih_menu" target="act_isi_porsi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="act_isi_porsi" target="act_klik_simpan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act_klik_simpan" target="act_hitung" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="act_hitung" target="dec_valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Decision: Tidak -> Peringatan -> Kembali ke Pilih Menu (Cabang Kanan Rapi) -->
+        <mxCell id="e_tidak" edge="1" parent="1" source="dec_valid" target="act_error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tidak" value="Tidak" connectable="0" parent="e_tidak" style="edgeLabel;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#000000;" vertex="1"><mxGeometry relative="1" x="-0.1" as="geometry" /></mxCell>
+
+        <mxCell id="e_loop" edge="1" parent="1" source="act_error" target="act_pilih_menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="875" y="535" />
+              <mxPoint x="875" y="302" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Decision: Ya -> Simpan Pesanan (Cabang Bawah Lurus) -->
+        <mxCell id="e_ya" edge="1" parent="1" source="dec_valid" target="act_simpan_db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ya" value="Ya" connectable="0" parent="e_ya" style="edgeLabel;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#000000;" vertex="1"><mxGeometry relative="1" x="-0.15" as="geometry" /></mxCell>
+
+        <!-- Simpan -> Menampilkan Total Tagihan -->
+        <mxCell id="e9" edge="1" parent="1" source="act_simpan_db" target="act_notif_sukses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Sistem ke Admin: Lihat Hasil -->
+        <mxCell id="e10" edge="1" parent="1" source="act_notif_sukses" target="act_lihat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Admin: Selesai -->
+        <mxCell id="e11" edge="1" parent="1" source="act_lihat" target="end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

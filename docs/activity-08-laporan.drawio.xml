@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Activity Diagram - Lihat Laporan" id="activity-laporan-bw">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="920" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Header Admin -->
+        <mxCell id="sw_admin_hdr" value="Admin / Petugas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontStyle=1;fontColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="400" height="35" as="geometry" />
+        </mxCell>
+        <!-- Body Admin -->
+        <mxCell id="sw_admin_body" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="65" width="400" height="640" as="geometry" />
+        </mxCell>
+
+        <!-- Header Sistem -->
+        <mxCell id="sw_sys_hdr" value="Sistem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontStyle=1;fontColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="440" y="30" width="440" height="35" as="geometry" />
+        </mxCell>
+        <!-- Body Sistem -->
+        <mxCell id="sw_sys_body" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="440" y="65" width="440" height="640" as="geometry" />
+        </mxCell>
+
+        <!-- Start Node (Admin) -->
+        <mxCell id="start" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="225" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Buka Menu Laporan -->
+        <mxCell id="act_buka" value="Membuka Menu Laporan Transaksi" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="130" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Tampilkan Rekapitulasi Penjualan -->
+        <mxCell id="act_tampil_ringkasan" value="Menampilkan Rekapitulasi Penjualan" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="130" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Pilih Filter Periode -->
+        <mxCell id="act_pilih_filter" value="Memilih Rentang Periode Tanggal" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="205" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Klik Terapkan Filter -->
+        <mxCell id="act_klik_filter" value="Klik Tombol Terapkan Filter" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="280" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Muat Data Sesuai Periode -->
+        <mxCell id="act_muat_data" value="Memuat Data Transaksi Periode" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="280" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Tampilkan Data Terfilter -->
+        <mxCell id="act_tampil_filter" value="Menampilkan Data Terfilter" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="355" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Klik Ekspor CSV -->
+        <mxCell id="act_klik_ekspor" value="Klik Tombol Ekspor CSV" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="430" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Buat Berkas CSV -->
+        <mxCell id="act_buat_csv" value="Membuat Berkas Laporan CSV" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="430" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Sistem: Unduh Berkas CSV -->
+        <mxCell id="act_unduh_csv" value="Mengunduh Berkas CSV Otomatis" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="505" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Admin: Terima Berkas -->
+        <mxCell id="act_terima_csv" value="Menerima Berkas Unduhan CSV" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="140" y="580" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- End Node (Admin) -->
+        <mxCell id="end" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="60" y="588" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Transisi / Panah -->
+        <mxCell id="e1" edge="1" parent="1" source="start" target="act_buka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act_buka" target="act_tampil_ringkasan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act_tampil_ringkasan" target="act_pilih_filter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act_pilih_filter" target="act_klik_filter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act_klik_filter" target="act_muat_data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="act_muat_data" target="act_tampil_filter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act_tampil_filter" target="act_klik_ekspor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="act_klik_ekspor" target="act_buat_csv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="act_buat_csv" target="act_unduh_csv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="act_unduh_csv" target="act_terima_csv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="act_terima_csv" target="end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
